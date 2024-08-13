@@ -1,0 +1,20 @@
+{
+    "name": "ToolkitEditor.AI",
+    "rootNamespace": "",
+    "references": [
+        "GUID:4f6675837be5f1d45a32fb1920bd0217",
+        "GUID:866c53caf1f0dc946856a36d187bfa48",
+        "GUID:45b6b318f92d80d4fbbb9a2679b1d509"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
