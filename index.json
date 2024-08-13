@@ -1,0 +1,167 @@
+{
+  "api/ToolkitEditor.AI.ActivityEditor.html": {
+    "href": "api/ToolkitEditor.AI.ActivityEditor.html",
+    "title": "Class ActivityEditor | AI Toolkit | 1.0.0",
+    "keywords": "Class ActivityEditor Namespace ToolkitEditor.AI public class ActivityEditor : BaseToolkitEditor Inheritance object ActivityEditor Fields m_actType protected SerializedProperty m_actType Field Value SerializedProperty m_autoDepart protected SerializedProperty m_autoDepart Field Value SerializedProperty m_duration protected SerializedProperty m_duration Field Value SerializedProperty m_onCanceled protected SerializedProperty m_onCanceled Field Value SerializedProperty m_onPerformed protected SerializedProperty m_onPerformed Field Value SerializedProperty m_onPerforming protected SerializedProperty m_onPerforming Field Value SerializedProperty m_predicate protected SerializedProperty m_predicate Field Value SerializedProperty m_score protected SerializedProperty m_score Field Value SerializedProperty m_type protected SerializedProperty m_type Field Value SerializedProperty m_uses protected SerializedProperty m_uses Field Value SerializedProperty Methods DrawEvents() protected override void DrawEvents() DrawProperties() protected override void DrawProperties()"
+  },
+  "api/ToolkitEditor.AI.FactionEditor.html": {
+    "href": "api/ToolkitEditor.AI.FactionEditor.html",
+    "title": "Class FactionEditor | AI Toolkit | 1.0.0",
+    "keywords": "Class FactionEditor Namespace ToolkitEditor.AI public class FactionEditor : BaseToolkitEditor Inheritance object FactionEditor Fields m_factionType protected SerializedProperty m_factionType Field Value SerializedProperty m_onChanged protected SerializedProperty m_onChanged Field Value SerializedProperty Methods DrawEvents() protected override void DrawEvents() DrawProperties() protected override void DrawProperties() OnEnable() protected virtual void OnEnable()"
+  },
+  "api/ToolkitEditor.AI.RelationshipTypeEditor.FactionMenuEventArgs.html": {
+    "href": "api/ToolkitEditor.AI.RelationshipTypeEditor.FactionMenuEventArgs.html",
+    "title": "Struct RelationshipTypeEditor.FactionMenuEventArgs | AI Toolkit | 1.0.0",
+    "keywords": "Struct RelationshipTypeEditor.FactionMenuEventArgs Namespace ToolkitEditor.AI public struct RelationshipTypeEditor.FactionMenuEventArgs Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Fields faction1 public FactionType faction1 Field Value FactionType faction2 public FactionType faction2 Field Value FactionType relationship public RelationshipType.Relationship relationship Field Value RelationshipType.Relationship"
+  },
+  "api/ToolkitEditor.AI.RelationshipTypeEditor.html": {
+    "href": "api/ToolkitEditor.AI.RelationshipTypeEditor.html",
+    "title": "Class RelationshipTypeEditor | AI Toolkit | 1.0.0",
+    "keywords": "Class RelationshipTypeEditor Namespace ToolkitEditor.AI public class RelationshipTypeEditor : Editor Inheritance object RelationshipTypeEditor Fields m_enemyFactor protected SerializedProperty m_enemyFactor Field Value SerializedProperty m_factions protected SerializedProperty m_factions Field Value SerializedProperty m_friendFactor protected SerializedProperty m_friendFactor Field Value SerializedProperty m_neutralFactor protected SerializedProperty m_neutralFactor Field Value SerializedProperty m_relationshipType protected RelationshipType m_relationshipType Field Value RelationshipType m_relationships protected SerializedProperty m_relationships Field Value SerializedProperty Methods OnInspectorGUI() public override void OnInspectorGUI()"
+  },
+  "api/ToolkitEditor.AI.html": {
+    "href": "api/ToolkitEditor.AI.html",
+    "title": "Namespace ToolkitEditor.AI | AI Toolkit | 1.0.0",
+    "keywords": "Namespace ToolkitEditor.AI Classes ActivityEditor FactionEditor RelationshipTypeEditor Structs RelationshipTypeEditor.FactionMenuEventArgs"
+  },
+  "api/ToolkitEngine.AI.Activity.ActType.html": {
+    "href": "api/ToolkitEngine.AI.Activity.ActType.html",
+    "title": "Enum Activity.ActType | AI Toolkit | 1.0.0",
+    "keywords": "Enum Activity.ActType Namespace ToolkitEngine.AI public enum Activity.ActType Fields Custom = 0 Instantaneous = 1 Timed = 2"
+  },
+  "api/ToolkitEngine.AI.Activity.html": {
+    "href": "api/ToolkitEngine.AI.Activity.html",
+    "title": "Class Activity | AI Toolkit | 1.0.0",
+    "keywords": "Class Activity Namespace ToolkitEngine.AI public class Activity : MonoBehaviour Inheritance object Activity Properties actType public Activity.ActType actType { get; } Property Value Activity.ActType infiniteUses public bool infiniteUses { get; } Property Value bool onCanceled public UnityEvent<ActivityEventArgs> onCanceled { get; } Property Value UnityEvent<ActivityEventArgs> onPerformed public UnityEvent<ActivityEventArgs> onPerformed { get; } Property Value UnityEvent<ActivityEventArgs> onPerforming public UnityEvent<ActivityEventArgs> onPerforming { get; } Property Value UnityEvent<ActivityEventArgs> running public bool running { get; } Property Value bool Methods BeginPerform(GameObject) protected void BeginPerform(GameObject obj) Parameters obj GameObject CanPerformBy(GameObject) public bool CanPerformBy(GameObject actor) Parameters actor GameObject Returns bool Cancel() public void Cancel() GetUtility(GameObject) public float GetUtility(GameObject actor) Parameters actor GameObject Returns float Perform() public void Perform()"
+  },
+  "api/ToolkitEngine.AI.ActivityAgent.html": {
+    "href": "api/ToolkitEngine.AI.ActivityAgent.html",
+    "title": "Class ActivityAgent | AI Toolkit | 1.0.0",
+    "keywords": "Class ActivityAgent Namespace ToolkitEngine.AI public class ActivityAgent : MonoBehaviour, IPoolItemRecyclable Inheritance object ActivityAgent Implements IPoolItemRecyclable Properties activity public Activity activity { get; set; } Property Value Activity Methods Cancel() public void Cancel() Perform() public void Perform() Recycle() public void Recycle()"
+  },
+  "api/ToolkitEngine.AI.ActivityAnimatorOverride.html": {
+    "href": "api/ToolkitEngine.AI.ActivityAnimatorOverride.html",
+    "title": "Class ActivityAnimatorOverride | AI Toolkit | 1.0.0",
+    "keywords": "Class ActivityAnimatorOverride Namespace ToolkitEngine.AI public class ActivityAnimatorOverride : MonoBehaviour Inheritance object ActivityAnimatorOverride"
+  },
+  "api/ToolkitEngine.AI.ActivityEventArgs.html": {
+    "href": "api/ToolkitEngine.AI.ActivityEventArgs.html",
+    "title": "Class ActivityEventArgs | AI Toolkit | 1.0.0",
+    "keywords": "Class ActivityEventArgs Namespace ToolkitEngine.AI public class ActivityEventArgs : EventArgs Inheritance object EventArgs ActivityEventArgs Inherited Members EventArgs.Empty object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors ActivityEventArgs(ActivityAgent, Activity) public ActivityEventArgs(ActivityAgent agent, Activity activity) Parameters agent ActivityAgent activity Activity Properties activity public Activity activity { get; } Property Value Activity agent public ActivityAgent agent { get; } Property Value ActivityAgent"
+  },
+  "api/ToolkitEngine.AI.Faction.html": {
+    "href": "api/ToolkitEngine.AI.Faction.html",
+    "title": "Class Faction | AI Toolkit | 1.0.0",
+    "keywords": "Class Faction Namespace ToolkitEngine.AI public class Faction : MonoBehaviour, IHealthModifier Inheritance object Faction Implements IHealthModifier Properties factionType public FactionType factionType { get; set; } Property Value FactionType onChanged public UnityEvent<Faction> onChanged { get; } Property Value UnityEvent<Faction> Methods TryGetFactor(DamageType, GameObject, out float) public bool TryGetFactor(DamageType damageType, GameObject target, out float value) Parameters damageType DamageType target GameObject value float Returns bool TryModifyFactor(DamageType, GameObject, float) public bool TryModifyFactor(DamageType damageType, GameObject target, float delta) Parameters damageType DamageType target GameObject delta float Returns bool TrySetFactor(DamageType, GameObject, float) public bool TrySetFactor(DamageType damageType, GameObject target, float value) Parameters damageType DamageType target GameObject value float Returns bool"
+  },
+  "api/ToolkitEngine.AI.FactionManager.html": {
+    "href": "api/ToolkitEngine.AI.FactionManager.html",
+    "title": "Class FactionManager | AI Toolkit | 1.0.0",
+    "keywords": "Class FactionManager Namespace ToolkitEngine.AI public class FactionManager : Singleton<FactionManager> Inheritance object FactionManager Properties Relationship public RelationshipType Relationship { get; } Property Value RelationshipType"
+  },
+  "api/ToolkitEngine.AI.FactionType.html": {
+    "href": "api/ToolkitEngine.AI.FactionType.html",
+    "title": "Class FactionType | AI Toolkit | 1.0.0",
+    "keywords": "Class FactionType Namespace ToolkitEngine.AI public class FactionType : ScriptableObject Inheritance object FactionType"
+  },
+  "api/ToolkitEngine.AI.IFaction.html": {
+    "href": "api/ToolkitEngine.AI.IFaction.html",
+    "title": "Interface IFaction | AI Toolkit | 1.0.0",
+    "keywords": "Interface IFaction Namespace ToolkitEngine.AI public interface IFaction Properties enabled bool enabled { get; } Property Value bool factionType FactionType factionType { get; } Property Value FactionType"
+  },
+  "api/ToolkitEngine.AI.NavMeshAgentControl.html": {
+    "href": "api/ToolkitEngine.AI.NavMeshAgentControl.html",
+    "title": "Class NavMeshAgentControl | AI Toolkit | 1.0.0",
+    "keywords": "Class NavMeshAgentControl Namespace ToolkitEngine.AI public class NavMeshAgentControl : MonoBehaviour Inheritance object NavMeshAgentControl Properties hasTarget public bool hasTarget { get; } Property Value bool navMeshAgent public NavMeshAgent navMeshAgent { get; } Property Value NavMeshAgent onArrival public UnityEvent<NavMeshAgent> onArrival { get; } Property Value UnityEvent<NavMeshAgent> target public GameObject target { get; set; } Property Value GameObject"
+  },
+  "api/ToolkitEngine.AI.PatrolPath.html": {
+    "href": "api/ToolkitEngine.AI.PatrolPath.html",
+    "title": "Class PatrolPath | AI Toolkit | 1.0.0",
+    "keywords": "Class PatrolPath Namespace ToolkitEngine.AI public class PatrolPath : MonoBehaviour Inheritance object PatrolPath Properties count Number of points in path public int count { get; } Property Value int wrapMode public WrapMode wrapMode { get; } Property Value WrapMode Methods GetClosestIndex(Transform) public int GetClosestIndex(Transform transform) Parameters transform Transform Returns int GetClosestPosition(Transform) public Vector3 GetClosestPosition(Transform transform) Parameters transform Transform Returns Vector3 TryGetPosition(int, out Vector3) public bool TryGetPosition(int index, out Vector3 position) Parameters index int position Vector3 Returns bool"
+  },
+  "api/ToolkitEngine.AI.PatrolPathAgent.html": {
+    "href": "api/ToolkitEngine.AI.PatrolPathAgent.html",
+    "title": "Class PatrolPathAgent | AI Toolkit | 1.0.0",
+    "keywords": "Class PatrolPathAgent Namespace ToolkitEngine.AI public class PatrolPathAgent : MonoBehaviour Inheritance object PatrolPathAgent Properties hasPath public bool hasPath { get; } Property Value bool path public PatrolPath path { get; } Property Value PatrolPath traveling public bool traveling { get; set; } Property Value bool Methods Next() public void Next() SetPath(PatrolPath, bool) public void SetPath(PatrolPath path, bool autoTravel = true) Parameters path PatrolPath autoTravel bool"
+  },
+  "api/ToolkitEngine.AI.RelationshipType.FactionPair.html": {
+    "href": "api/ToolkitEngine.AI.RelationshipType.FactionPair.html",
+    "title": "Class RelationshipType.FactionPair | AI Toolkit | 1.0.0",
+    "keywords": "Class RelationshipType.FactionPair Namespace ToolkitEngine.AI [Serializable] public class RelationshipType.FactionPair Inheritance object RelationshipType.FactionPair Inherited Members object.Equals(object, object) object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors FactionPair(FactionType, FactionType) public FactionPair(FactionType faction1, FactionType faction2) Parameters faction1 FactionType faction2 FactionType Methods Equals(object) Determines whether the specified object is equal to the current object. public override bool Equals(object obj) Parameters obj object The object to compare with the current object. Returns bool true if the specified object is equal to the current object; otherwise, false. GetHashCode() Serves as the default hash function. public override int GetHashCode() Returns int A hash code for the current object."
+  },
+  "api/ToolkitEngine.AI.RelationshipType.Relationship.html": {
+    "href": "api/ToolkitEngine.AI.RelationshipType.Relationship.html",
+    "title": "Enum RelationshipType.Relationship | AI Toolkit | 1.0.0",
+    "keywords": "Enum RelationshipType.Relationship Namespace ToolkitEngine.AI public enum RelationshipType.Relationship Fields Enemy = 2 Friend = 1 Neutral = 0"
+  },
+  "api/ToolkitEngine.AI.RelationshipType.html": {
+    "href": "api/ToolkitEngine.AI.RelationshipType.html",
+    "title": "Class RelationshipType | AI Toolkit | 1.0.0",
+    "keywords": "Class RelationshipType Namespace ToolkitEngine.AI public class RelationshipType : ScriptableObject Inheritance object RelationshipType Properties Factions public IList<FactionType> Factions { get; set; } Property Value IList<FactionType> Methods GetFactor(Relationship) public float GetFactor(RelationshipType.Relationship relationship) Parameters relationship RelationshipType.Relationship Returns float RemoveRelationship(FactionType, FactionType) public bool RemoveRelationship(FactionType a, FactionType b) Parameters a FactionType b FactionType Returns bool SetRelationship(FactionType, FactionType, Relationship) public void SetRelationship(FactionType a, FactionType b, RelationshipType.Relationship relationship) Parameters a FactionType b FactionType relationship RelationshipType.Relationship TryGetFactor(FactionType, FactionType, out float) public bool TryGetFactor(FactionType a, FactionType b, out float factor) Parameters a FactionType b FactionType factor float Returns bool TryGetRelationship(FactionType, FactionType, out Relationship) public bool TryGetRelationship(FactionType a, FactionType b, out RelationshipType.Relationship relationship) Parameters a FactionType b FactionType relationship RelationshipType.Relationship Returns bool"
+  },
+  "api/ToolkitEngine.AI.VisualScripting.BaseActivityEventUnit.html": {
+    "href": "api/ToolkitEngine.AI.VisualScripting.BaseActivityEventUnit.html",
+    "title": "Class BaseActivityEventUnit | AI Toolkit | 1.0.0",
+    "keywords": "Class BaseActivityEventUnit Namespace ToolkitEngine.AI.VisualScripting public abstract class BaseActivityEventUnit : BaseEventUnit<ActivityEventArgs> Inheritance object BaseActivityEventUnit Derived OnActivityCanceled OnActivityPerformed OnActivityPerforming"
+  },
+  "api/ToolkitEngine.AI.VisualScripting.OnActivityCanceled.html": {
+    "href": "api/ToolkitEngine.AI.VisualScripting.OnActivityCanceled.html",
+    "title": "Class OnActivityCanceled | AI Toolkit | 1.0.0",
+    "keywords": "Class OnActivityCanceled Namespace ToolkitEngine.AI.VisualScripting public class OnActivityCanceled : BaseActivityEventUnit Inheritance object BaseActivityEventUnit OnActivityCanceled Properties MessageListenerType public override Type MessageListenerType { get; } Property Value Type"
+  },
+  "api/ToolkitEngine.AI.VisualScripting.OnActivityCanceledMessageListener.html": {
+    "href": "api/ToolkitEngine.AI.VisualScripting.OnActivityCanceledMessageListener.html",
+    "title": "Class OnActivityCanceledMessageListener | AI Toolkit | 1.0.0",
+    "keywords": "Class OnActivityCanceledMessageListener Namespace ToolkitEngine.AI.VisualScripting public class OnActivityCanceledMessageListener : MessageListener Inheritance object OnActivityCanceledMessageListener"
+  },
+  "api/ToolkitEngine.AI.VisualScripting.OnActivityPerformed.html": {
+    "href": "api/ToolkitEngine.AI.VisualScripting.OnActivityPerformed.html",
+    "title": "Class OnActivityPerformed | AI Toolkit | 1.0.0",
+    "keywords": "Class OnActivityPerformed Namespace ToolkitEngine.AI.VisualScripting public class OnActivityPerformed : BaseActivityEventUnit Inheritance object BaseActivityEventUnit OnActivityPerformed Properties MessageListenerType public override Type MessageListenerType { get; } Property Value Type"
+  },
+  "api/ToolkitEngine.AI.VisualScripting.OnActivityPerformedMessageListener.html": {
+    "href": "api/ToolkitEngine.AI.VisualScripting.OnActivityPerformedMessageListener.html",
+    "title": "Class OnActivityPerformedMessageListener | AI Toolkit | 1.0.0",
+    "keywords": "Class OnActivityPerformedMessageListener Namespace ToolkitEngine.AI.VisualScripting public class OnActivityPerformedMessageListener : MessageListener Inheritance object OnActivityPerformedMessageListener"
+  },
+  "api/ToolkitEngine.AI.VisualScripting.OnActivityPerforming.html": {
+    "href": "api/ToolkitEngine.AI.VisualScripting.OnActivityPerforming.html",
+    "title": "Class OnActivityPerforming | AI Toolkit | 1.0.0",
+    "keywords": "Class OnActivityPerforming Namespace ToolkitEngine.AI.VisualScripting public class OnActivityPerforming : BaseActivityEventUnit Inheritance object BaseActivityEventUnit OnActivityPerforming Properties MessageListenerType public override Type MessageListenerType { get; } Property Value Type"
+  },
+  "api/ToolkitEngine.AI.VisualScripting.OnActivityPerformingMessageListener.html": {
+    "href": "api/ToolkitEngine.AI.VisualScripting.OnActivityPerformingMessageListener.html",
+    "title": "Class OnActivityPerformingMessageListener | AI Toolkit | 1.0.0",
+    "keywords": "Class OnActivityPerformingMessageListener Namespace ToolkitEngine.AI.VisualScripting public class OnActivityPerformingMessageListener : MessageListener Inheritance object OnActivityPerformingMessageListener"
+  },
+  "api/ToolkitEngine.AI.VisualScripting.html": {
+    "href": "api/ToolkitEngine.AI.VisualScripting.html",
+    "title": "Namespace ToolkitEngine.AI.VisualScripting | AI Toolkit | 1.0.0",
+    "keywords": "Namespace ToolkitEngine.AI.VisualScripting Classes BaseActivityEventUnit OnActivityCanceled OnActivityCanceledMessageListener OnActivityPerformed OnActivityPerformedMessageListener OnActivityPerforming OnActivityPerformingMessageListener"
+  },
+  "api/ToolkitEngine.AI.html": {
+    "href": "api/ToolkitEngine.AI.html",
+    "title": "Namespace ToolkitEngine.AI | AI Toolkit | 1.0.0",
+    "keywords": "Namespace ToolkitEngine.AI Classes Activity ActivityAgent ActivityAnimatorOverride ActivityEventArgs Faction FactionManager FactionType NavMeshAgentControl PatrolPath PatrolPathAgent RelationshipType RelationshipType.FactionPair Interfaces IFaction Enums Activity.ActType RelationshipType.Relationship"
+  },
+  "api/index.html": {
+    "href": "api/index.html",
+    "title": "| AI Toolkit | 1.0.0",
+    "keywords": "This is the documentation for the Scripting APIs of this package."
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "| AI Toolkit | 1.0.0",
+    "keywords": "This page redirects to the manual."
+  },
+  "license/LICENSE.html": {
+    "href": "license/LICENSE.html",
+    "title": "| AI Toolkit | 1.0.0",
+    "keywords": "MIT License Copyright (c) 2024 nrvllrgrs Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  "manual/index.html": {
+    "href": "manual/index.html",
+    "title": "toolkit.ai | AI Toolkit | 1.0.0",
+    "keywords": "toolkit.ai"
+  }
+}

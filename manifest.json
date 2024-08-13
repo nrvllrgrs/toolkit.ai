@@ -1,0 +1,391 @@
+{
+  "sitemap": {
+    "baseUrl": "https://nrvllrgrs.github.io/toolkit.ai/"
+  },
+  "source_base_path": "/home/runner/work/toolkit.ai/toolkit.ai/Documentation~",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.AI.ActivityEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.AI.ActivityEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.AI.FactionEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.AI.FactionEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.AI.RelationshipTypeEditor.FactionMenuEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.AI.RelationshipTypeEditor.FactionMenuEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.AI.RelationshipTypeEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.AI.RelationshipTypeEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.AI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.AI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.Activity.ActType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.Activity.ActType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.Activity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.Activity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.ActivityAgent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.ActivityAgent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.ActivityAnimatorOverride.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.ActivityAnimatorOverride.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.ActivityEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.ActivityEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.Faction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.Faction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.FactionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.FactionManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.FactionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.FactionType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.IFaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.IFaction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.NavMeshAgentControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.NavMeshAgentControl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.PatrolPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.PatrolPath.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.PatrolPathAgent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.PatrolPathAgent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.RelationshipType.FactionPair.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.RelationshipType.FactionPair.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.RelationshipType.Relationship.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.RelationshipType.Relationship.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.RelationshipType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.RelationshipType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.VisualScripting.BaseActivityEventUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.VisualScripting.BaseActivityEventUnit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.VisualScripting.OnActivityCanceled.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.VisualScripting.OnActivityCanceled.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.VisualScripting.OnActivityCanceledMessageListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.VisualScripting.OnActivityCanceledMessageListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.VisualScripting.OnActivityPerformed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.VisualScripting.OnActivityPerformed.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.VisualScripting.OnActivityPerformedMessageListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.VisualScripting.OnActivityPerformedMessageListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.VisualScripting.OnActivityPerforming.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.VisualScripting.OnActivityPerforming.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.VisualScripting.OnActivityPerformingMessageListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.VisualScripting.OnActivityPerformingMessageListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.VisualScripting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.VisualScripting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.AI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.AI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "license/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "license/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "license/toc.md",
+      "output": {
+        ".json": {
+          "relative_path": "license/toc.json"
+        },
+        ".html": {
+          "relative_path": "license/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
