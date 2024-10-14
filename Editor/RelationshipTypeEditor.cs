@@ -7,12 +7,12 @@ using ToolkitEngine.AI;
 
 namespace ToolkitEditor.AI
 {
-    [CustomEditor(typeof(RelationshipType))]
+    [CustomEditor(typeof(FactionManagerConfig))]
     public class RelationshipTypeEditor : Editor
     {
         #region Fields
 
-        protected RelationshipType m_relationshipType;
+        protected FactionManagerConfig m_relationshipType;
 
         protected SerializedProperty m_factions;
         private ReorderableList m_factionsList;
@@ -47,7 +47,7 @@ namespace ToolkitEditor.AI
                 .Select(x => AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(x), typeof(FactionType)))
                 .Cast<FactionType>();
 
-            m_relationshipType = (RelationshipType)target;
+            m_relationshipType = (FactionManagerConfig)target;
             m_factions = serializedObject.FindProperty(nameof(m_factions));
 
             m_neutralFactor = serializedObject.FindProperty(nameof(m_neutralFactor));
@@ -131,7 +131,7 @@ namespace ToolkitEditor.AI
                     int lastIndex = validFactions.Length - i - 1;
                     for (int j = 0; j < validFactions.Length - i; ++j)
                     {
-                        if (!m_relationshipType.TryGetRelationship(validFactions[i], validFactions[^(j + 1)], out RelationshipType.Relationship relationship))
+                        if (!m_relationshipType.TryGetRelationship(validFactions[i], validFactions[^(j + 1)], out FactionManagerConfig.Relationship relationship))
                             continue;
 
                         x = lastRect.x + EditorGUIUtility.labelWidth + EditorGUIUtility.singleLineHeight * j + EditorGUIUtility.standardVerticalSpacing * (j + 1);
@@ -142,11 +142,11 @@ namespace ToolkitEditor.AI
                         Texture2D icon;
                         switch (relationship)
                         {
-                            case RelationshipType.Relationship.Friend:
+                            case FactionManagerConfig.Relationship.Friend:
                                 icon = FriendIcon;
                                 break;
 
-                            case RelationshipType.Relationship.Enemy:
+                            case FactionManagerConfig.Relationship.Enemy:
                                 icon = EnemyIcon;
                                 break;
 
@@ -162,19 +162,19 @@ namespace ToolkitEditor.AI
                             {
                                 faction1 = validFactions[i],
                                 faction2 = validFactions[^(j + 1)],
-                                relationship = RelationshipType.Relationship.Neutral
+                                relationship = FactionManagerConfig.Relationship.Neutral
                             });
                             menu.AddItem(new GUIContent("Friend"), false, HandleItemClicked, new FactionMenuEventArgs()
                             {
                                 faction1 = validFactions[i],
                                 faction2 = validFactions[^(j + 1)],
-                                relationship = RelationshipType.Relationship.Friend
+                                relationship = FactionManagerConfig.Relationship.Friend
                             });
                             menu.AddItem(new GUIContent("Enemey"), false, HandleItemClicked, new FactionMenuEventArgs()
                             {
                                 faction1 = validFactions[i],
                                 faction2 = validFactions[^(j + 1)],
-                                relationship = RelationshipType.Relationship.Enemy
+                                relationship = FactionManagerConfig.Relationship.Enemy
                             });
                             menu.DropDown(cellRect);
                         }
@@ -274,7 +274,7 @@ namespace ToolkitEditor.AI
                 m_relationshipType.SetRelationship(
                     faction,
                     other,
-                    faction.Equals(other) ? RelationshipType.Relationship.Friend : RelationshipType.Relationship.Neutral);
+                    faction.Equals(other) ? FactionManagerConfig.Relationship.Friend : FactionManagerConfig.Relationship.Neutral);
             }
 
             Save();
@@ -317,7 +317,7 @@ namespace ToolkitEditor.AI
         {
             public FactionType faction1;
             public FactionType faction2;
-            public RelationshipType.Relationship relationship;
+            public FactionManagerConfig.Relationship relationship;
         }
 
         #endregion

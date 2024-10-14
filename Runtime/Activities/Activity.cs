@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
-using ToolkitEngine.Sensors;
 
 namespace ToolkitEngine.AI
 {
@@ -25,7 +24,7 @@ namespace ToolkitEngine.AI
 		#endregion
 	}
 
-	[RequireComponent(typeof(Markup))]
+	[RequireComponent(typeof(Destination))]
 	public class Activity : MonoBehaviour
 	{
 		#region Enumerators
@@ -59,7 +58,7 @@ namespace ToolkitEngine.AI
 		[SerializeField, Tooltip("Evaluators to calculate activity utility.")]
 		private UnityEvaluator m_score = new();
 
-		private Markup m_markup;
+		private Destination m_destination;
 		private ActivityAgent m_agent;
 		private int m_remainingUses;
 		private Coroutine m_performanceThread = null;
@@ -97,23 +96,23 @@ namespace ToolkitEngine.AI
 
 		private void Awake()
 		{
-			m_markup = GetComponent<Markup>();
+			m_destination = GetComponent<Destination>();
 			m_remainingUses = m_uses;
 		}
 
 		private void OnEnable()
 		{
-			m_markup.onArrival.AddListener(Markup_Arrival);
-			m_markup.onDeparture.AddListener(Markup_Departure);
+			m_destination.onArrival.AddListener(Destination_Arrival);
+			m_destination.onDeparture.AddListener(Destination_Departure);
 		}
 
 		private void OnDisable()
 		{
-			m_markup.onArrival.RemoveListener(Markup_Arrival);
-			m_markup.onDeparture.RemoveListener(Markup_Departure);
+			m_destination.onArrival.RemoveListener(Destination_Arrival);
+			m_destination.onDeparture.RemoveListener(Destination_Departure);
 		}
 
-		private void Markup_Arrival(MarkupEventArgs e)
+		private void Destination_Arrival(DestinationEventArgs e)
 		{
 			if (CanPerformBy(e.actor))
 			{
@@ -121,7 +120,7 @@ namespace ToolkitEngine.AI
 			}
 		}
 
-		private void Markup_Departure(MarkupEventArgs e)
+		private void Destination_Departure(DestinationEventArgs e)
 		{
 			if (running)
 			{
@@ -192,7 +191,7 @@ namespace ToolkitEngine.AI
 			// Depart after actiity has been performed (or canceled)
 			if (m_autoDepart)
 			{
-				m_markup.Depart(actor);
+				m_destination.Depart(actor);
 			}
 		}
 
@@ -204,7 +203,7 @@ namespace ToolkitEngine.AI
 		public float GetUtility(GameObject actor)
 		{
 			// Currently in use (or reserved), skip
-			if (running || m_markup.reserved)
+			if (running || m_destination.reserved)
 				return 0f;
 
 			// Cannot be performed by actor, skip

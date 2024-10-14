@@ -95,7 +95,7 @@ namespace ToolkitEngine.AI
 				return false;
 			}
 
-			return FactionManager.Instance.Relationship.TryGetFactor(m_factionType, otherFaction.factionType, out value);
+			return FactionManager.CastInstance.Config.TryGetFactor(m_factionType, otherFaction.factionType, out value);
 		}
 
 		public bool TryModifyFactor(DamageType damageType, GameObject target, float delta)
