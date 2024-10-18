@@ -1,12 +1,24 @@
 {
-	"name": "com.toolkit.ai",
-	"displayName": "AI Toolkit",
-	"version": "1.0.0",
-	"unity": "2019.4",
-	"description": "A set components for AI.",
-	"keywords": [
-		"toolkit"
-	],
-	"category": "Toolkit",
-	"dependencies": { }
+  "name": "com.toolkit.ai",
+  "displayName": "AI Toolkit",
+  "version": "1.0.0",
+  "unity": "2019.4",
+  "description": "A set components for AI.",
+  "keywords": [
+    "toolkit"
+  ],
+  "category": "Toolkit",
+  "dependencies": {},
+  "repository": {
+    "url": "https://github.com/nrvllrgrs/toolkit.ai",
+    "type": "git"
+  },
+  "samples": [
+    {
+      "displayName": "Visual Scripting",
+      "description": "Visual Scripting components",
+      "path": "Samples~/Visual Scripting"
+    }
+  ],
+  "_fingerprint": "b262eb9b0438d845c0bfe6e4b457c8faa91f240d"
 }

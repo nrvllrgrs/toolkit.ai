@@ -1,0 +1,21 @@
+{
+    "name": "ToolkitEditor.AI.VisualScripting",
+    "rootNamespace": "",
+    "references": [
+        "GUID:54cb1906aeb4e4264bc1d2aa3818a43f",
+        "GUID:23f3c6063e13e4fd9addce3606ff4e42",
+        "GUID:866c53caf1f0dc946856a36d187bfa48",
+        "GUID:3f1f571dedb44f84b9692faef46a67d8"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
